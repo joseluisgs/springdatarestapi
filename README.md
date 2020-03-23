@@ -14,10 +14,10 @@ Ejemplo de como hacer un API REST en Springboot con temas avanzados
 
 
 ##### Ejecución
-http://localhost:8080/
-H2: http://localhost:8080/h2-console. 
-* user:sa
-* db: jdbc:h2:./springdatarestapi
+* http://localhost:8080/
+* H2: http://localhost:8080/h2-console. 
+** user:sa
+** db: jdbc:h2:./springdatarestapi
 
 ## Acerca de
 José Luis González Sánchez: [@joseluisgonsan](https://twitter.com/joseluisgonsan)
