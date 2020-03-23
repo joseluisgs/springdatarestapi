@@ -4,7 +4,7 @@ Ejemplo de como hacer un API REST siguiendo Spring Data REST: REST + HATEOAS + H
 ## Tecnologías
 * H2 como base de datos embebida
 * Lombok para potenciar las anotaciones: https://projectlombok.org/features/all
-* Swagger para documentar
+
 
 
 ### Desarrollo
