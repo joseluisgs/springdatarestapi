@@ -293,6 +293,102 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Listar ciudades comienzan por",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades/search/nombreComienzaPor?nombre=M",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades",
+						"search",
+						"nombreComienzaPor"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar ciudades comienzan por paginado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades/search/nombreComienzaPor?nombre=M&page=1&size=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades",
+						"search",
+						"nombreComienzaPor"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "M"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar ciudades comienzan por ordenado (y puedes paginarlo)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades/search/nombreComienzaPor?nombre=M&sort=nombre,desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades",
+						"search",
+						"nombreComienzaPor"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "M"
+						},
+						{
+							"key": "sort",
+							"value": "nombre,desc"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
