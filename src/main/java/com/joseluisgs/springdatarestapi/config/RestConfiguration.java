@@ -14,5 +14,4 @@ public class RestConfiguration implements RepositoryRestConfigurer {
     }
 
 
-
 }

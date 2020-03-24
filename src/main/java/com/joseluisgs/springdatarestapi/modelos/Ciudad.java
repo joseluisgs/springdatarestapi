@@ -13,15 +13,21 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 @Entity
+
 public class Ciudad {
 
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String nombre;
 
+    private String lat;
+
+    private String lng;
+
     @ManyToOne
     @JoinColumn(name = "pais_id")
     private Pais pais;
-
 }
+
