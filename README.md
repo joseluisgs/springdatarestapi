@@ -11,7 +11,7 @@ Ejemplo de como hacer un API REST siguiendo Spring Data REST: REST + HATEOAS + H
 * 23/03/2020: Inicio del proyecto
 * 23/03/2020: Spring Data REST. Configuracion y parámetros
 * 24/03/2020: Spring Data REST. Paginación y búsqueda, proyecciones y excerpts
-* 24/03/2020: Produccion, ver la rama Producción: MySQL
+* 24/03/2020: Produccion, ver la rama Producción: MySQL, Perfiles
 
 
 ##### Ejecución
