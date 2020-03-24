@@ -11,14 +11,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/",
+					"raw": "http://localhost:8080/api",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						""
+						"api"
 					]
 				}
 			},
@@ -30,13 +30,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/paises",
+					"raw": "http://localhost:8080/api/paises",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"paises"
 					]
 				}
@@ -49,13 +50,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/ciudades",
+					"raw": "http://localhost:8080/api/ciudades",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"ciudades"
 					]
 				}
@@ -68,13 +70,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/ciudades?page=1&size=3",
+					"raw": "http://localhost:8080/api/ciudades?page=1&size=3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"ciudades"
 					],
 					"query": [
@@ -106,13 +109,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/paises",
+					"raw": "http://localhost:8080/api/paises",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"paises"
 					]
 				}
@@ -134,13 +138,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/paises/100",
+					"raw": "http://localhost:8080/api/paises/100",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"paises",
 						"100"
 					]
@@ -163,13 +168,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/paises/100",
+					"raw": "http://localhost:8080/api/paises/100",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"paises",
 						"100"
 					]
@@ -184,7 +190,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"nombre\": \"Ciudad Real\",\n\t\"pais\": \"http://localhost:8080/pais/1\"\n}",
+					"raw": "{\n\t\"nombre\": \"Ciudad Real\",\n\t\"pais\": \"http://localhost:8080/api/pais/1\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -192,13 +198,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/ciudades",
+					"raw": "http://localhost:8080/api/ciudades",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"ciudades"
 					]
 				}
@@ -212,7 +219,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"nombre\": \"Ciudad Real\",\n\t\"pais\": \"http://localhost:8080/pais/1\"\n}",
+					"raw": "{\n\t\"nombre\": \"Ciudad Real 2\",\n\t\"pais\": \"http://localhost:8080/api/pais/2\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -220,13 +227,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/ciudades/101",
+					"raw": "http://localhost:8080/api/ciudades/101",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"ciudades",
 						"101"
 					]
@@ -249,15 +257,38 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/ciudades/101",
+					"raw": "http://localhost:8080/api/ciudades/101",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"ciudades",
 						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar pais de una Ciudad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades/101/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades",
+						"101",
+						"pais"
 					]
 				}
 			},
