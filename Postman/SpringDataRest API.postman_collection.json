@@ -389,6 +389,79 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Listar una ciudad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades/29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar ciudades sin ubicacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades?projection=ciudadSinUbicacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades"
+					],
+					"query": [
+						{
+							"key": "projection",
+							"value": "ciudadSinUbicacion"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar ciudades con latitud y longitid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ciudades?projection=ciudadLatLng",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ciudades"
+					],
+					"query": [
+						{
+							"key": "projection",
+							"value": "ciudadLatLng"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
